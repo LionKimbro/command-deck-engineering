@@ -1,0 +1,197 @@
+{
+  "document": {
+    "document-id": "command-deck-engineering.first-experiment",
+    "title": "Command Deck Engineering: First Experiment",
+    "purpose": "Define a minimal practical experiment for testing Command Deck Engineering with a small team, shared displays, and clearly defined roles in order to evaluate whether shared situational awareness improves software development coordination.",
+    "developed-in": "https://chatgpt.com/c/69ab493f-3de0-832f-8bb8-5e21880968a8"
+  },
+  "experiment-goal": "Test whether a coordinated crew working around shared displays can construct software faster and with better shared understanding than traditional individual development workflows.",
+  "hypothesis": "A coordinated crew operating with shared displays and defined roles can maintain shared situational awareness and accelerate software development.",
+  "crew-size": {
+    "target": "4-6 participants",
+    "minimum": "3 participants"
+  },
+  "mission": {
+    "description": "Build or extend a small software component while operating entirely within the Command Deck model.",
+    "candidate-projects": [
+      "Extend the JSON Tree Editor to support arbitrary scripts.",
+      "Implement a visualizer for the Patchboard message flow"
+    ],
+    "selection-criteria": [
+      "Small enough to complete meaningful progress in 90 minutes",
+      "Requires architecture discussion",
+      "Requires code changes and testing"
+    ]
+  },
+  "mission-selected": {
+    "name": "JSONEdit Extensible Menu System",
+    "objective": "Add the ability to define new menu commands in JSON and export them for inclusion in the core distribution.",
+    "success-criteria": [
+      "Menu items can be defined in JSON.",
+      "Menu items appear in the UI.",
+      "Menu actions execute scripts.",
+      "Menu definitions can be exported for distribution."
+    ]
+  },
+  "participants": {
+    "captain": "Lion",
+    "first-officer": "Wesley",
+    "navigator": "TBD - Susie?",
+    "operator": "TBD - Wesley? - someone with Claude Code / Codex experience",
+    "lead-visualizer": "TBD - Max? - someone with computer graphics experience",
+    "librarian": "optional"
+  },
+  "roles": {
+    "captain": {
+      "description": "Directs system design and development decisions during the session.",
+      "responsibilities": [
+        "Defines architecture and development direction.",
+        "Assigns tasks to crew members.",
+        "Maintains overall conceptual integrity."
+      ]
+    },
+    "first-officer": {
+      "description": "Constant architectural partner to the captain; participates in all reasoning and can assume command instantly if needed.",
+      "responsibilities": [
+        "Acts as thinking partner to the captain during design discussions.",
+        "Challenges assumptions and verifies reasoning.",
+        "Maintains a parallel mental model of the system.",
+        "Takes over captain role temporarily if the captain steps away."
+      ]
+    },
+    "navigator": {
+      "description": "Maintains awareness of project progress and next possible actions.",
+      "responsibilities": [
+        "Tracks mission objectives",
+        "Tracks what is working.",
+        "Tracks what is broken.",
+        "Tracks possible next steps.",
+        "Maintains a mission log of completed work.",
+        "Visualizes progress and possibilities."
+      ]
+    },
+    "operator": {
+      "description": "Executes commands on the system and operates automation and AI tools.",
+      "responsibilities": [
+        "Runs builds, tests, and scripts.",
+        "Executes system-wide changes.",
+        "Operates AI tools when requested by the captain."
+      ]
+    },
+    "lead-visualizer": {
+      "description": "Translates system ideas into diagrams and maintains the architecture map.",
+      "responsibilities": [
+        "Creates and updates system diagrams.",
+        "Maintains the shared architecture map.",
+        "Externalizes the evolving system structure."
+      ]
+    },
+    "librarian": {
+      "description": "Retrieves artifacts and information needed by the crew.",
+      "responsibilities": [
+        "Finds documentation, code references, and specifications.",
+        "Projects artifacts onto the shared display when needed."
+      ]
+    }
+  },
+  "preparation": [
+    "Shared voice/video call created",
+    "Board display connected to large screen",
+    "Map display opened with diagram workspace",
+    "Code repository cloned by participants",
+    "Connect to shared Filesystems",
+    "Operator ready with terminal and AI tools"
+  ],
+  "session-flow": [
+    {
+      "phase": "briefing",
+      "duration": "10 minutes",
+      "description": "Captain explains mission and system context"
+    },
+    {
+      "phase": "architecture mapping",
+      "duration": "15 minutes",
+      "description": "Visualizer constructs initial system map"
+    },
+    {
+      "phase": "development cycle",
+      "duration": "45 minutes",
+      "description": "Crew iteratively designs, codes, and tests features"
+    },
+    {
+      "phase": "review",
+      "duration": "10 minutes",
+      "description": "Navigator summarizes what was accomplished"
+    }
+  ],
+  "artifacts-produced": [
+    "Architecture diagrams",
+    "Code changes",
+    "Navigator mission log",
+    "Session recording"
+  ],
+  "screens": {
+    "model": "Two-screen shared attention surface",
+    "screen-1": {
+      "name": "board",
+      "purpose": "Primary shared focus surface used for active development, debugging, or discussion.",
+      "control": "Dynamic",
+      "switching": {
+        "method": "Screen sharing through a shared meeting session (Zoom, Discord, etc.)",
+        "procedure": [
+          "Participant begins screen share to take control of the board.",
+          "Previous presenter stops sharing.",
+          "Board immediately switches to the new presenter."
+        ]
+      },
+      "typical-content": [
+        "code editor",
+        "test results",
+        "terminal output",
+        "AI tool interaction",
+        "logs or runtime telemetry"
+      ]
+    },
+    "screen-2": {
+      "name": "map",
+      "purpose": "Persistent architecture and system overview display used to maintain shared structural understanding.",
+      "control": "Lead Visualizer",
+      "switching": {
+        "method": "Visualizer maintains a persistent diagram workspace",
+        "procedure": [
+          "Visualizer updates diagrams continuously during discussion.",
+          "Map display remains stable unless intentionally changed."
+        ]
+      },
+      "typical-content": [
+        "system architecture diagrams",
+        "module relationships",
+        "data flow diagrams",
+        "project structure maps"
+      ]
+    }
+  },
+  "display-control-protocol": [
+    "Captain may request a participant to take the board display.",
+    "Participant begins screen share to assume control.",
+    "When finished, participant stops sharing and control returns to neutral state."
+  ],
+  "session-length": {
+    "target-duration": "60-120 minutes",
+    "recommended": "90 minutes"
+  },
+  "workspace-layout": {
+    "shared-displays": "1-2 large displays visible to the entire crew",
+    "personal-workspaces": "each participant uses their own laptop",
+    "communication": "participants remain in a shared voice call even if physically co-located"
+  },
+  "evaluation-criteria": [
+    "Did the crew maintain shared situational awareness?",
+    "Did coordination occur faster than in typical development workflows?",
+    "Did misunderstandings resolve quickly through shared displays?",
+    "Did participants experience increased focus or engagement?"
+  ],
+  "next-steps": [
+    "perform a 10-minute dry run simulation of the roles"
+  ]
+}

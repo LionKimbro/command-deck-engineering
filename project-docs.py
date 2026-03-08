@@ -6,8 +6,9 @@ RAW = ROOT / "docs" / "raw"
 DOCS = ROOT / "docs"
 
 mapping_dictionary = {
-    "0001": "",   # project to docs/
-    "0002": None  # ignore
+    "0001": "",    # project to docs/
+    "0002": None,  # ignore
+    "0003": "",
 }
 
 

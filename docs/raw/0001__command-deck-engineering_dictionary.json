@@ -505,6 +505,30 @@
         "ship-computer"
       ]
     },
+    "tool-developers": {
+      "id": "tools-developers",
+      "name-tag": {
+        "title": "Tool Developers",
+        "tags": [
+          "role",
+          "infrastructure",
+          "tooling",
+          "engineering"
+        ],
+        "hook": "engineers responsible for building and maintaining the tools and computational systems used by the command deck"
+      },
+      "outline": [
+        "Develop and maintain the ship computer and analysis systems.",
+        "Create visualization and telemetry tools used on the command deck.",
+        "Build automation systems that amplify the effectiveness of bridge roles.",
+        "Improve development infrastructure based on needs discovered during command deck sessions."
+      ],
+      "related-entries": [
+        "ship-computer",
+        "operator",
+        "command-deck-systems-architecture"
+      ]
+    },
     "ship-computer": {
       "id": "ship-computer",
       "name-tag": {
@@ -550,6 +574,9 @@
         "lead-visualizer",
         "visualization-team",
         "ship-computer"
+      ],
+      "related-concepts": [
+        "Common Operating Picture (COP)"
       ]
     }
   }
