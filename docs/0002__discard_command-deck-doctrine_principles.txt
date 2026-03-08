@@ -1,0 +1,20 @@
+date: 2026-03-07
+title: discards from working on command-deck-engineering.dictionary, dictionary.command-deck-doctrine.outline
+
+[
+  "Complex engineering requires high-bandwidth coordinate, and shared attention is a coordination amplifier.",
+  "Complex engineering contains moments of real decision and consequence.  Command Deck environments allow teams to confront those moments together.",
+  "Engineering environments should allow the shared attention surface to be shaped dynamically in response to the evolving system.",
+  "The shared attention of the engineering crew must be dynamically directable to the parts of the system that currently matter.",
+  "Visualization and shared displays make it possible for a crew to maintain one evolving picture.",
+  "Shared attention dramatically increases coordination bandwidth.  Misunderstandings are caught immediately, decisions propagate instantly, design drift is prevented, context switching is nuked, and the system model in people's heads, stays synchronized.",
+  "Many people experience the act of building meaningful things as a collective activity. Coordinated crew environments can unlock energy, focus, and joy that solitary work often does not.",
+  "Engineering systems should amplify human capability and human enthusiasm simultaneously.  Human energy and engagement are critical engineering resources.",
+  "Development environments should foster shared purpose, visible impact, and meaningful roles.",
+  "Software systems can often be understood by a single architect, but constructing them requires distributed labor and high-bandwidth communication.",
+  "When multiple people contribute to a system, preserving a coherent design becomes a central coordination challenge.",
+  "Shared situational awareness improves engineering coordination and reduces misunderstanding.",
+  "System structure should be externalized visually so that all participants can understand the architecture of the system.",
+  "System behavior should be continuously observable so that participants can see what the system is doing.",
+  "Human cognitive labor can be distributed into specialized roles that cooperate in real time, similar to operational environments such as ship bridges or mission control."
+]

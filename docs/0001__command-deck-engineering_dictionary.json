@@ -1,0 +1,556 @@
+{
+  "document": {
+    "document-id": "command-deck-engineering.dictionary",
+    "title": "Command Deck Engineering Dictionary",
+    "purpose": "Provide a compact semantic dictionary of concepts related to Command Deck Engineering to LLMs, and to an interested public.",
+    "developed-in": "https://chatgpt.com/c/69ab493f-3de0-832f-8bb8-5e21880968a8"
+  },
+  "reader-orientation": {
+    "purpose": "This document is a dictionary: a compact semantic dictionary of recurring concepts used in Command Deck Engineering discussions, intended to provide quick grounding rather than full specifications.",
+    "audience": "The general public, Wing-Cat, and other LLMs assisting with Command Deck Engineering concepts.",
+    "design-goals": [
+      "Provide short orientation anchors for Command Deck Engineering concepts.",
+      "Avoid redundancy with full specs or manifestos; definitions should be minimal but high-signal.",
+      "Entries include only facets meaningful to the concept rather than a rigid universal schema."
+    ],
+    "naming-convention": {
+      "style": "kebab-case",
+      "reason": "Keys use kebab-case to visually distinguish semantic metadata from code identifiers or runtime attributes."
+    },
+    "interpretation-guidance": [
+      "Treat entries as conceptual orientation anchors rather than exhaustive doctrine.",
+      "Infer relationships contextually rather than assuming strict schema completeness."
+    ]
+  },
+  "schema": {
+    "required-fields": {
+      "id": "Canonical identifier of the concept; must match the key used in the dictionary.",
+      "name-tag": {
+        "tags": "List of classification tags describing the concept.",
+        "hook": "Short one-sentence orientation anchor (mental entry point)."
+      }
+    },
+    "typical-fields": {
+      "origin": "Conceptual provenance indicating how or where the idea emerged.",
+      "outline": "Short list describing key structural aspects of the concept.",
+      "design-intent": "Key motivations behind the concept.",
+      "related-entries": "List of concept ids referencing other dictionary entries.",
+      "name-tag.alias": "List of aliases; an optional field within the name-tag."
+    }
+  },
+  "dictionary": {
+    "command-deck-engineering": {
+      "id": "command-deck-engineering",
+      "name-tag": {
+        "title": "Command Deck Engineering",
+        "tags": [
+          "methodology",
+          "software-development",
+          "collaboration",
+          "systems-engineering"
+        ],
+        "hook": "a software development methodology that organizes engineers, tools, and information flows around a command-deck-style environment to maintain intense focus while sharing situational awareness during the rapid construction of complex systems"
+      },
+      "origin": "Concept developed by Lion Kimbro through discussions with Wing-Cat, inspired by Artemis starship bridge simulator, NASA mission control, and the surgical team model from the Mythical Man Month.",
+      "outline": [
+        "Software is developed in a shared operational environment, resembling a starship's bridge.",
+        "Everybody has a role.",
+        "Everybody is involved simultaneously in the development of the software.",
+        "The system being built is continuously visible to everybody.",
+        "The environment integrates human and computational analysis."
+      ],
+      "design-intent": [
+        "Absolutely minimize downtime, maintain laser focus and excitement in a live development environment for making software.",
+        "Amplify command through distributed cognition -- Individual roles contribute to a larger synergy.",
+        "Take advantage of the various diverse skills and proclivities that people have, in a way that adds up magnificently.",
+        "Write software systems faster, more comprehensively, with fewer bugs than ever before, with great joy and social engagement in a meaningful and serious task.",
+        "Make visualization a first-rate actor in software development.",
+        "Take advantage of everything we know about the importance of continuous testing in software development."
+      ],
+      "operational-principles": [
+        "A coordinated crew, building the system together.",
+        "Maintain shared situational awareness.",
+        "Externalize system structure visually."
+      ],
+      "conceptual-pillars": [
+        {
+          "name": "augmented-intellect",
+          "description": "computing systems should amplify human reasoning and collaborative problem solving",
+          "lineage": [
+            "jcr-licklider",
+            "douglas-engelbart",
+            "alan-kay"
+          ]
+        },
+        {
+          "name": "visual-reasoning",
+          "description": "complex systems are understood best when their structure and relationships are represented visually",
+          "lineage": [
+            "ivan-sutherland",
+            "robert-horn",
+            "bret-victor"
+          ]
+        },
+        {
+          "name": "operational-coordination",
+          "description": "teams managing complex systems benefit from shared situational awareness and coordinated specialized roles",
+          "lineage": [
+            "nasa-mission-control",
+            "artemis-bridge-simulator"
+          ]
+        }
+      ],
+      "related-entries": [
+        "command-deck-doctrine",
+        "command-deck-protocols",
+        "command-deck-systems-architecture"
+      ]
+    },
+    "command-deck-doctrine": {
+      "id": "command-deck-doctrine",
+      "name-tag": {
+        "title": "Command Deck Doctrin",
+        "tags": [
+          "philosophy",
+          "methodology",
+          "systems-thinking",
+          "software-engineering"
+        ],
+        "hook": "the philosophical foundation of Command Deck Engineering, describing why software development benefits from a coordinated command environment rather than solitary programming"
+      },
+      "outline": [
+        "Many people experience the act of building meaningful systems as a collective activity. Coordinated crew environments can unlock energy, focus, and engagement that solitary work often does not.",
+        "Engineering environments should foster shared purpose, visible impact, and meaningful roles. Human energy and motivation are important engineering resources.",
+        "Software systems can often be understood by a single architect, but constructing them requires distributed labor and high-bandwidth communication.",
+        "Shared attention dramatically increases coordination bandwidth. When a team focuses on the same artifact at the same time, misunderstandings are caught quickly, decisions propagate immediately, and the system model across participants remains synchronized.",
+        "Visual information mapping dramatically reduces cognitive load.",
+        "Visualization and shared displays allow the crew to maintain a single evolving picture of the system being built.",
+        "Engineering environments should allow the crew’s shared attention surface to be reshaped dynamically so that the team can focus collectively on the parts of the system that currently matter.",
+        "Complex engineering contains moments of real decision and consequence. Command Deck environments allow teams to confront those moments together.",
+        "When multiple people contribute to a system, preserving a coherent design becomes a central coordination challenge.",
+        "Shared situational awareness improves engineering coordination and reduces misunderstanding.",
+        "System structure should be externalized visually so that all participants can understand the architecture of the system.",
+        "System behavior should be continuously observable so that participants can see what the system is doing.",
+        "Human cognitive labor can be distributed into specialized roles that cooperate in real time, similar to operational environments such as ship bridges or mission control."
+      ],
+      "related-entries": [
+        "command-deck-engineering",
+        "command-deck-lineage"
+      ]
+    },
+    "command-deck-lineage": {
+      "id": "command-deck-lineage",
+      "name-tag": {
+        "title": "Command Deck Lineage",
+        "tags": [
+          "history",
+          "software-engineering",
+          "lineage"
+        ],
+        "hook": "the historical lineage of thinkers, systems, and operational environments that influenced the development of Command Deck Engineering"
+      },
+      "influences": {
+        "jcr-licklider": {
+          "person": "J. C. R. Licklider",
+          "born": 1915,
+          "contributions": [
+            "Man–Computer Symbiosis: the concept that humans and computers should form cooperative systems where each complements the strengths of the other.",
+            "Interactive computing: early advocacy for real-time interaction with computers rather than batch processing.",
+            "Networked information communities: vision of globally connected computers enabling collaborative work and shared knowledge.",
+            "Early leadership of ARPA's Information Processing Techniques Office (IPTO), which funded foundational research in interactive computing, networking, and time-sharing systems.",
+            "Conceptual foundation for later work by Douglas Engelbart, Alan Kay, and other pioneers of human-centered computing."
+          ]
+        },
+        "harlan-mills": {
+          "person": "Harlan Mills",
+          "born": 1919,
+          "contributions": [
+            "Chief Programmer Team model: organizing software development around a central architect supported by specialized roles such as backup programmer, tester, and librarian"
+          ]
+        },
+        "douglas-engelbart": {
+          "person": "Douglas Engelbart",
+          "born": 1925,
+          "contributions": [
+            "Augmenting Human Intellect: computing systems designed to amplify human reasoning and collaboration",
+            "Collective IQ and shared interactive workspaces",
+            "Real-time collaborative environments for complex problem solving"
+          ]
+        },
+        "fred-brooks": {
+          "person": "Fred Brooks",
+          "born": 1931,
+          "contributions": [
+            "Conceptual Integrity principle: coherent system design requires unified architectural vision",
+            "The surgical team model described in The Mythical Man-Month"
+          ]
+        },
+        "ivan-sutherland": {
+          "person": "Ivan Sutherland",
+          "born": 1938,
+          "contributions": [
+            "Sketchpad: demonstration that complex systems can be designed and understood through interactive visual representations"
+          ]
+        },
+        "alan-kay": {
+          "person": "Alan Kay",
+          "born": 1940,
+          "contributions": [
+            "Object-oriented computing and the Smalltalk environment: a live programming system where programs, objects, and user interfaces can be inspected and modified interactively.",
+            "Computing as a medium for thought: the idea that computers should support human understanding, learning, and creativity rather than merely executing procedures.",
+            "Dynamic, exploratory programming environments where systems remain visible and modifiable during execution.",
+            "Personal dynamic media: computing environments designed to amplify human thinking and communication.",
+            "Early vision of networked collaborative computing environments for groups of people working with shared information systems."
+          ]
+        },
+        "robert-horn": {
+          "person": "Robert E. Horn",
+          "born": 1940,
+          "contributions": [
+            "Information Mapping: a structured method for organizing complex information so that humans can understand and navigate it effectively.",
+            "Visual Language: development of visual methods for representing complex systems, policies, and arguments.",
+            "Mapping complex knowledge domains through diagrams and structured visual representations.",
+            "Advocated visual thinking tools to improve collective reasoning and decision making in organizations."
+          ]
+        },
+        "nasa-mission-control": {
+          "system": "NASA Mission Control",
+          "established": 1960,
+          "contributions": [
+            "Operational control rooms where teams maintain shared situational awareness while managing complex systems in real time"
+          ]
+        },
+        "augmenting-human-intellect": {
+          "work": "Augmenting Human Intellect: A Conceptual Framework",
+          "author": "Douglas Engelbart",
+          "year": 1962,
+          "contributions": [
+            "Proposed that computers should augment human intellectual capability rather than merely automate calculations.",
+            "Introduced the concept of interactive computing environments designed to support complex problem solving.",
+            "Outlined systems for collaborative knowledge work, including shared documents, structured linking, and interactive displays.",
+            "Presented the idea that improving tools for thinking could improve humanity’s ability to solve large-scale problems.",
+            "Provided the conceptual foundation for later systems such as NLS (oN-Line System) and the famous 1968 'Mother of All Demos'."
+          ]
+        },
+        "mit-ai-lab-hacker-environment": {
+          "system": "MIT AI Lab Hacker Environment",
+          "organization": "MIT Artificial Intelligence Laboratory",
+          "established": 1963,
+          "contributions": [
+            "Collaborative time-sharing computing environment where multiple engineers worked simultaneously on a shared system.",
+            "Culture of real-time collaborative development with immediate experimentation and system modification.",
+            "Shared awareness of system state and activity across engineers working on the same machine.",
+            "Demonstrated highly social software development centered around a shared computational environment.",
+            "Influenced later computing cultures including Lisp development environments and early open-source collaboration."
+          ]
+        },
+        "nls-system": {
+          "system": "NLS (oN-Line System)",
+          "organization": "Augmentation Research Center, Stanford Research Institute",
+          "established": 1968,
+          "contributions": [
+            "Interactive computing environment designed to augment human intellect and collaborative reasoning.",
+            "Supported real-time editing, linking, and navigation of complex knowledge structures.",
+            "Enabled shared displays and collaborative work across remote terminals.",
+            "Demonstrated computers as environments for coordinated human problem solving rather than isolated computation.",
+            "Introduced many concepts later seen in modern development environments: hypertext, version control, collaborative editing, and structured knowledge navigation."
+          ]
+        },
+        "mother-of-all-demos": {
+          "work": "The Mother of All Demos",
+          "presenter": "Douglas Engelbart",
+          "year": 1968,
+          "contributions": [
+            "Demonstrated the NLS (oN-Line System), showing interactive computing, hypertext linking, and real-time document editing.",
+            "Presented collaborative computing through live video links, allowing multiple engineers to work on shared information simultaneously.",
+            "Showed early forms of shared screens, remote collaboration, and visual navigation of complex information structures.",
+            "Illustrated computing as a medium for coordinated human thinking rather than passive calculation."
+          ]
+        },
+        "bret-victor": {
+          "person": "Bret Victor",
+          "born": 1982,
+          "contributions": [
+            "Visible computing: program structure and behavior should be directly visible to human perception",
+            "Immediate feedback computing: systems should show the consequences of changes instantly",
+            "Social cognition with computers: computing environments should support groups of people thinking together around shared artifacts"
+          ]
+        },
+        "complete-map-of-every-thought": {
+          "work": "How to Make a Complete Map of Every Thought You Think",
+          "year": 2003,
+          "contributions": [
+            "A conceptual framework for mapping human thought structures using explicit visual representations.",
+            "Explores how complex reasoning can be externalized into navigable cognitive maps.",
+            "Extends visual reasoning traditions such as information mapping and argument mapping."
+          ]
+        },
+        "artemis-bridge-simulator": {
+          "system": "Artemis: Spaceship Bridge Simulator",
+          "creator": "Thomas Robertson",
+          "established": 2010,
+          "contributions": [
+            "Demonstrates distributed human roles cooperating through shared displays and coordinated attention",
+            "Illustrates attention management, role specialization, and collective situational awareness"
+          ]
+        },
+        "command-deck-engineering": {
+          "work": "Command Deck Engineering",
+          "year": 2026,
+          "contributions": [
+            "A methodology organizing software development around shared attention, visual system models, and coordinated engineering roles.",
+            "Synthesizes ideas from augmented intellect systems, visual language, operational control rooms, and collaborative computing."
+          ]
+        }
+      },
+      "related-entries": [
+        "command-deck-engineering",
+        "command-deck-doctrine"
+      ]
+    },
+    "command-deck-systems-architecture": {
+      "id": "command-deck-systems-architecture",
+      "name-tag": {
+        "title": "Command Deck Systems Architecture",
+        "tags": [
+          "infrastructure",
+          "tools",
+          "environment",
+          "architecture"
+        ],
+        "hook": "the physical and software infrastructure required to operate a Command Deck Engineering environment"
+      },
+      "outline": [
+        "Bridge workspace layout with shared displays.",
+        "Ship computer systems that analyzes, visualizes, and manipulates code, and supports each person in their role.",
+        "Integrated development tools and telemetry.",
+        "Communication infrastructure linking bridge roles and support decks."
+      ],
+      "related-entries": [
+        "command-deck-engineering",
+        "ship-computer"
+      ]
+    },
+    "command-deck-protocols": {
+      "id": "command-deck-protocols",
+      "name-tag": {
+        "title": "Command Deck Protocols",
+        "tags": [
+          "operations",
+          "human-protocols",
+          "collaboration"
+        ],
+        "hook": "the operational practices and communication procedures used by teams operating a command deck"
+      },
+      "outline": [
+        "Role-specific communication channels.",
+        "Structured short command phrases for information retrieval.",
+        "Interrupt rules to maintain cognitive flow.",
+        "Situational reporting procedures.",
+        "Developed socially."
+      ],
+      "related-entries": [
+        "command-deck-engineering",
+        "navigator",
+        "librarian"
+      ]
+    },
+    "captain": {
+      "id": "captain",
+      "name-tag": {
+        "title": "Captain",
+        "tags": [
+          "role",
+          "leadership",
+          "software-engineering"
+        ],
+        "hook": "the chief programmer responsible for directing implementation"
+      },
+      "outline": [
+        "Defines architecture and system direction.",
+        "Approves structural decisions.",
+        "Coordinates work of bridge roles.",
+        "May write or direct implementation of code."
+      ],
+      "related-entries": [
+        "first-officer",
+        "navigator",
+        "lead-visualizer"
+      ]
+    },
+    "first-officer": {
+      "id": "first-officer",
+      "name-tag": {
+        "title": "First Officer",
+        "tags": [
+          "role",
+          "verification",
+          "engineering"
+        ],
+        "hook": "the backup programmer who maintains a parallel mental model of the system and verifies decisions"
+      },
+      "outline": [
+        "Monitors logic and architecture decisions.",
+        "Challenges assumptions.",
+        "Steps in for captain when needed."
+      ],
+      "related-entries": [
+        "captain"
+      ]
+    },
+    "navigator": {
+      "id": "navigator",
+      "name-tag": {
+        "title": "Navigator",
+        "tags": [
+          "role",
+          "project-state",
+          "situational-awareness"
+        ],
+        "hook": "the officer responsible for tracking mission progress and maintaining awareness of project state"
+      },
+      "outline": [
+        "Tracks mission objectives",
+        "Tracks what is working.",
+        "Tracks what is broken.",
+        "Tracks possible next steps.",
+        "Maintains a mission log of completed work.",
+        "Visualizes progress and possibilities."
+      ],
+      "related-entries": [
+        "captain",
+        "command-deck-protocols"
+      ]
+    },
+    "operator": {
+      "id": "operator",
+      "name-tag": {
+        "title": "Operator",
+        "tags": [
+          "role",
+          "operations",
+          "automation"
+        ],
+        "hook": "the bridge officer responsible for executing commands, orchestrating AI tools, and performing operational actions on the codebase"
+      },
+      "outline": [
+        "Executes commands issued by the captain or bridge crew.",
+        "Operates AI systems and automation tools.",
+        "Performs bulk or system-wide operations on the codebase.",
+        "Handles mechanical development tasks to keep the captain focused on design and reasoning."
+      ],
+      "related-entries": [
+        "captain",
+        "ship-computer",
+        "command-deck-protocols"
+      ]
+    },
+    "lead-visualizer": {
+      "id": "lead-visualizer",
+      "name-tag": {
+        "title": "Lead Visualizer",
+        "tags": [
+          "role",
+          "visualization",
+          "architecture"
+        ],
+        "hook": "the bridge officer responsible for translating spoken design ideas into immediate diagrams of system structure"
+      },
+      "outline": [
+        "Produces quick sketches of architecture.",
+        "Works closely with the captain to externalize the system mental model.",
+        "Feeds structural information to the visualization team."
+      ],
+      "related-entries": [
+        "visualization-team"
+      ]
+    },
+    "visualization-team": {
+      "id": "visualization-team",
+      "name-tag": {
+        "title": "Visualization Team",
+        "tags": [
+          "role",
+          "visualization",
+          "system-mapping"
+        ],
+        "hook": "a group responsible for refining architectural diagrams and maintaining the system visual map"
+      },
+      "outline": [
+        "Converts rough sketches into formal diagrams.",
+        "Maintains architecture and flow maps.",
+        "Supports bridge displays with updated system visuals."
+      ],
+      "related-entries": [
+        "lead-visualizer"
+      ]
+    },
+    "librarian": {
+      "id": "librarian",
+      "name-tag": {
+        "title": "Librarian",
+        "tags": [
+          "role",
+          "information",
+          "projection"
+        ],
+        "hook": "the officer responsible for retrieving artifacts and projecting them onto shared bridge displays"
+      },
+      "outline": [
+        "Finds relevant documents, specs, code, or diagrams.",
+        "Projects artifacts to shared displays instantly.",
+        "Maintains organized knowledge repositories."
+      ],
+      "related-entries": [
+        "ship-computer"
+      ]
+    },
+    "ship-computer": {
+      "id": "ship-computer",
+      "name-tag": {
+        "title": "Ship Computer",
+        "tags": [
+          "system",
+          "analysis",
+          "automation",
+          "ai"
+        ],
+        "hook": "a computational system that continuously analyzes the codebase and provides queries, telemetry, and visualizations to the bridge"
+      },
+      "outline": [
+        "Indexes and analyzes the codebase.",
+        "Runs tests and simulations.",
+        "Generates system diagrams and telemetry.",
+        "Answers queries from the bridge crew."
+      ],
+      "related-entries": [
+        "command-deck-systems-architecture",
+        "librarian"
+      ]
+    },
+    "situation-display": {
+      "id": "situation-display",
+      "name-tag": {
+        "title": "Situation Display",
+        "tags": [
+          "system",
+          "visualization",
+          "situational-awareness"
+        ],
+        "hook": "the shared visual surface where the current state of the system, architecture, and mission progress are displayed to the command deck crew"
+      },
+      "outline": [
+        "Displays system architecture, telemetry, and operational state.",
+        "Provides a shared reference point for the entire crew.",
+        "Allows rapid switching between different views such as architecture diagrams, execution traces, or strategic project maps.",
+        "Supports collective reasoning and decision-making."
+      ],
+      "related-entries": [
+        "command-deck-engineering",
+        "lead-visualizer",
+        "visualization-team",
+        "ship-computer"
+      ]
+    }
+  }
+}
