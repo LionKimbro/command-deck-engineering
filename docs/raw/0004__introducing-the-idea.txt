@@ -1,0 +1,68 @@
+date: 2026-03-07
+title: Introducing the Idea of Command Deck Engineering
+
+
+Software engineering is usually treated as a solitary activity.
+
+One programmer.
+One laptop.
+A long chain of commits and pull requests.
+
+But building complex systems **doesn't have to feel solitary**.
+
+I think it can be dynamic.
+Dramatic.
+Exciting.
+And fun.
+
+Not one person quietly pushing code...
+
+but **a coordinated crew, building the system together.**
+
+Imagine software development working more like the bridge of a starship.
+
+Shared displays.
+Clear roles.
+Rapid decisions.
+Everyone seeing the system evolve in real time.
+
+I've been exploring an idea I call **Command Deck Engineering**.
+
+A small engineering crew works around two shared displays:
+
+• **The Board** — the active working surface (code, logs, tests, tools)
+• **The Map** — a persistent architecture diagram of the system
+
+Roles would include:
+
+• Captain — who directs the action, and decides architecture
+• First Officer — architectural partner
+• Navigator — tracks project state, mission objectives, to-do's
+• Operator — executes commands, operates AI tools
+• Visualizer — maps the system architecture
+
+Instead of one person constantly switching roles…
+
+architect → coder → debugger → tool builder → tester
+
+…the cognitive work happens **in parallel**.
+
+The goal isn't just productivity.
+
+It's **shared situational awareness**.
+
+And something else too:
+
+The experience of a **coordinated crew, building something meaningful together**.
+
+I'm looking for people and a space for a first experience.
+
+You can read the design notes here:
+
+Command Deck Engieering Dictionary:
+https://github.com/LionKimbro/command-deck-engineering/blob/main/docs/raw/0001__command-deck-engineering_dictionary.json
+
+First Experiment:
+https://github.com/LionKimbro/command-deck-engineering/blob/main/docs/raw/0003__first-experiment.json
+
+
