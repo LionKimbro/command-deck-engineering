@@ -1,5 +1,6 @@
 date: 2026-03-07
 title: Introducing the Idea of Command Deck Engineering
+url: https://x.com/LionKimbro/status/2030486422256517475
 
 
 Software engineering is usually treated as a solitary activity.
